@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  */
 
 @Component
-@FeignClient(value = "MICROSERVICECLOUDPROVIDERDEPTHYSTRIX")
+@FeignClient(value = "MICROSERVICECLOUDPROVIDERDEPTHYSTRIX", fallback = DeptHystrixFallBackService.class)
 public interface DeptHystrixService {
 
 
