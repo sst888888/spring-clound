@@ -26,7 +26,7 @@ public class DeptServiceImpl implements DeptService {
                     {@HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "5000")})
     @Override
     public String deptInfo_Timeout(Integer id) {
-        int outTime = 6;
+        int outTime = 4;
         try {
             TimeUnit.SECONDS.sleep(outTime);
         } catch (InterruptedException e) {
