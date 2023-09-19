@@ -7,9 +7,15 @@ package com.example.microservicecloudproviderdepthystrix8004.service;
 public interface DeptService {
 
 
-    // hystrix 熔断器示例 ok
+    // 熔断器
     public String deptInfo_Ok(Integer id);
-    //hystrix 熔断器超时案例
+
+
+    // 熔断器超时
     public String deptInfo_Timeout(Integer id);
+
+
+    // 熔断机制
+    public String deptCircuitBreaker(Integer id);
 
 }

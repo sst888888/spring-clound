@@ -35,4 +35,12 @@ public class DeptController {
         System.out.println("端口号：" + serverPort + " result:" + result);
         return result + "，   端口号：" + serverPort;
     }
+
+
+    @RequestMapping(value = "/dept/hystrix/circuit/{id}")
+    public String deptCircuitBreaker(@PathVariable("id") Integer id){
+        String result = deptService.deptCircuitBreaker(id);
+        System.out.println("result:" + result);
+        return result;
+    }
 }
