@@ -6,7 +6,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
 
 /**
  * @author: cp
@@ -42,5 +45,11 @@ public class DeptController {
         String result = deptService.deptCircuitBreaker(id);
         System.out.println("result:" + result);
         return result;
+    }
+
+
+    @RequestMapping(value = "/dept/list", method = RequestMethod.GET)
+    public String list() {
+        return "ok";
     }
 }
