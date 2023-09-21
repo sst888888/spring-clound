@@ -22,7 +22,7 @@ public class FlowLimitController {
     }
     @GetMapping("/test2")
     public String test2() {
-        return "c语言中文网提醒您，服务访问成功------test222222";
+        return "服务访问成功------test222222";
     }
 
 
