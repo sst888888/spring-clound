@@ -15,6 +15,7 @@
         <module name="micro-service-cloud-eureka-7002" />
         <module name="micro-service-cloud-consumer-dept-80" />
         <module name="micro-service-cloud-consumer-dept-feign" />
+        <module name="spring-cloud-alibaba-provider-mysql-9003" />
         <module name="spring-cloud-alibaba-provider-9001" />
         <module name="micro-service-cloud-gateway-9527" />
         <module name="spring-cloud-alibaba-config-client-9909" />
@@ -40,6 +41,7 @@
       <module name="spring-cloud-alibaba-config-client-9909" options="-parameters" />
       <module name="spring-cloud-alibaba-consumer-nacos-9901" options="-parameters" />
       <module name="spring-cloud-alibaba-provider-9001" options="-parameters" />
+      <module name="spring-cloud-alibaba-provider-mysql-9003" options="-parameters" />
       <module name="spring-cloud-alibaba-sentinel-service-9401" options="-parameters" />
     </option>
   </component>

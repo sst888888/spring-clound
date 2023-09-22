@@ -10,6 +10,7 @@
         <option value="$PROJECT_DIR$/spring-cloud-alibaba-demo/spring-cloud-alibaba-consumer-nacos-9901/pom.xml" />
         <option value="$PROJECT_DIR$/spring-cloud-alibaba-demo/spring-cloud-alibaba-config-client-9909/pom.xml" />
         <option value="$PROJECT_DIR$/spring-cloud-alibaba-demo/spring-cloud-alibaba-sentinel-service-9401/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-alibaba-demo/spring-cloud-alibaba-provider-mysql-9003/pom.xml" />
       </list>
     </option>
   </component>
