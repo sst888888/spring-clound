@@ -1,2 +1,32 @@
 server:
   port: 9402
+spring:
+  application:
+    name: spring-cloud-gateway-sentinel
+  cloud:
+    sentinel:
+      transport:
+        port: 8719
+        dashboard: localhost:8080
+      datasource:
+        # ?? Nacos
+        ds1:
+          nacos:
+            server-addr: localhost:8848
+            data-id: sentinel-service-sentinel
+            group-id: DEFAULT_GROUP
+            data-type: json
+            rule-type: flow
+
+#        ds2:
+#          nacos:
+#            server-addr: 127.0.0.1:8848
+#            namespace: public
+#            data-id: gateway-flow-rule-api-sentinel
+#            group-id: DEFAULT_GROUP
+#            data-type: json
+#            # API ??
+#            rule-type: gw-api-group
+
+
+#            https://zhuanlan:zhihu:com/p/569512349:

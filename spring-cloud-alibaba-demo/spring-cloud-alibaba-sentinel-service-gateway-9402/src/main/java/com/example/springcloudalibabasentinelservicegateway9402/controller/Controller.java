@@ -6,6 +6,8 @@ import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import com.alibaba.csp.sentinel.slots.block.BlockException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Bean;
+import org.springframework.http.codec.ServerCodecConfigurer;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -77,5 +79,19 @@ public class Controller {
         System.out.println(Thread.currentThread().getName() + " test6服务访问失败! 您已被限流，请稍后重试");
         return "test6服务访问失败! 您已被限流，请稍后重试";
     }
+
+
+    @GetMapping("/product/foo")
+    public String product() {
+        return "服务访问成功------test product";
+    }
+
+
+    @GetMapping("/product_route")
+    public String product_route() {
+        return "服务访问成功------test product_route";
+    }
+
+
 
 }
